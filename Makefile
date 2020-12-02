@@ -48,8 +48,8 @@ book-init:
 
 
 $(PUBLISH_DIR)/README.md:
-	@echo '# Content for LFE + `rebar3_lfe` Quick Start' > $(PUBLISH_DIR)/README.md
-	@echo 'Published at [lfe.io/books/rebar3-quick-start/](https://lfe.io/books/rebar3-quick-start/)' >> $(PUBLISH_DIR)/README.md
+	@echo '# Content for LFE Music Programming with `undertone`' > $(PUBLISH_DIR)/README.md
+	@echo 'Published at [cnbbooks/lfe-music-programming](https://cnbbooks.github.io/lfe-music-programming/current/)' >> $(PUBLISH_DIR)/README.md
 	@cd $(PUBLISH_DIR) && git add README.md
 
 publish: build

@@ -6,15 +6,13 @@ Published by Cowboys 'N' Beans Books
 <br/>
 <br/>
 
-First electronic edition published: 2013
-
-Second electronic edition published: 2020
+First electronic edition published: 2020
 
 <br/>
 <br/>
 <br/>
 
-&copy; 2013-2020, Duncan McGreggor
+&copy; 2020, Duncan McGreggor
 
 [cc-license]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
@@ -27,4 +25,4 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 <br/>
 <br/>
 
-Cover art: Original version from [1968 DEC FOCAL Programming Manual](https://archive.org/details/bitsavers_decpdp8focogrammingManual1968_2885139) with stylised PDP-8 as the dominant cover graphic. Adaptation of the original as a spoof and homage was made in 2015 by Duncan McGreggor.
+Cover art: Book covers for the 1.x series of LFE vertsions were inspired by the [1968 DEC FOCAL Programming Manual](https://archive.org/details/bitsavers_decpdp8focogrammingManual1968_2885139) with stylised PDP-8 as the dominant cover graphic. For the LFE 2.x series, a new cover was designed along the same lines but using a PDP-11 as the basis.

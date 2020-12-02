@@ -1,4 +1,4 @@
-# LFE Quick Start with `rebar3_lfe`
+# LFE Music Programming with `undertone`
 
 <br/>
 <br/>
@@ -21,7 +21,7 @@ by Duncan McGreggor
 
 [![publisher logo][publisher-img]][publisher-site]
 
-<!-- Named page links below: /-->
+[//]: --Named-Links--
 
-[publisher-img]: images/cnbb-pub-logo-1.6.png
+[publisher-img]: ../images/cnbb-pub-logo-1.6.png
 [publisher-site]: http://cnbb.pub/

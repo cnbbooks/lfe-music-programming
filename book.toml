@@ -1,7 +1,7 @@
 [book]
-title = "LFE Quick Start with rebar3_lfe"
+title = "LFE Music Programming with undertone"
 author = "Duncan McGreggor"
-description = "An Introduction to LFE: Going Ludicrous Speed"
+description = "Programming in LFE to generate audio, create instruments, work with MIDI, and make music."
 language = "en"
 
 [build]
@@ -24,3 +24,6 @@ boost-hierarchy = 2
 boost-paragraph = 1
 expand = true
 heading-split-level = 2
+
+[output.html.fold]
+enable = true

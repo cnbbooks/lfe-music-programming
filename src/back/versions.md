@@ -2,8 +2,8 @@
 
 ## Current
 
-The current version of the LFE rebar3 Quick Start is written against LFE 2.0-dev.
+You're looking at it.
 
 ## Previous
 
-After the LFE 2.0 release, you will see a link to content created as part of that effort here. At which point the "Current" version will be incremented.
+There are currently no previous versions of the book.
