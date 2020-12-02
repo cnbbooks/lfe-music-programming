@@ -33,6 +33,7 @@
   * [MIDI on the Mac](production/midi/README.md)
   * [Controlling a DAW](production/daws/README.md)
   * [Creating a Custom OSC Server](production/custom-osc/README.md)
+* [Epilogue](epilogue/README.md)
 
 --------------------
 
