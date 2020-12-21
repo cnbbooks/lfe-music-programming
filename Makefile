@@ -49,7 +49,7 @@ book-init:
 
 $(PUBLISH_DIR)/README.md:
 	@echo '# Content for LFE Music Programming with `undertone`' > $(PUBLISH_DIR)/README.md
-	@echo 'Published at [cnbbooks/lfe-music-programming](https://cnbbooks.github.io/lfe-music-programming/current/)' >> $(PUBLISH_DIR)/README.md
+	@echo 'Published at [undertone.lfe.io/book](https://undertone.lfe.io/book/)' >> $(PUBLISH_DIR)/README.md
 	@cd $(PUBLISH_DIR) && git add README.md
 
 publish: build

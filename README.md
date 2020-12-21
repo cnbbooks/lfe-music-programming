@@ -7,4 +7,4 @@
 [cover]: src/images/cover.jpg
 [cover-large]: src/images/cover-large.jpg
 
-Published at [cnbbooks/lfe-music-programming](https://cnbbooks.github.io/lfe-music-programming/current/).
+Published at [undertone.lfe.io/book](https://undertone.lfe.io/book).
