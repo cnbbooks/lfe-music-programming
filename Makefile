@@ -3,7 +3,7 @@ GEN := $(shell which $(BIN) 2> /dev/null)
 DOWNLOAD = https://github.com/rust-lang/mdBook/releases
 PUBLISH_DIR = book
 PUBLISH_CONTENT = $(PUBLISH_DIR)/current
-PUBLISH_BRANCH = master
+PUBLISH_BRANCH = main
 BUILDER_BRANCH = builder
 
 default: build
