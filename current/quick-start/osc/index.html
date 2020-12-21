@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js lfe-pdp">
+
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>OSC - LFE Music Programming with undertone</title>
+    
+    
+
+
+    <!-- Custom HTML head -->
+    
+
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="Programming in LFE to generate audio, create instruments, work with MIDI, and make music.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../../favicon.svg">
+    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/chrome.css">
+    <link rel="stylesheet" href="../../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+    
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+    
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../../highlight.css">
+    <link rel="stylesheet" href="../../tomorrow-night.css">
+    <link rel="stylesheet" href="../../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    
+
+    
+</head>
+
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "lfe-pdp" : "lfe-pdp";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch (e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('lfe-pdp')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch (e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">LFE Music Programming with undertone</a></li><li class="chapter-item affix "><a href="../../front/title.html">Title Page</a></li><li class="chapter-item affix "><a href="../../front/copyright.html">Copyright</a></li><li class="spacer"></li><li class="chapter-item "><a href="../../intro/index.html"><strong aria-hidden="true">1.</strong> Introduction</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../intro/lfe-erlang.html"><strong aria-hidden="true">1.1.</strong> LFE and Erlang</a></li><li class="chapter-item "><a href="../../intro/music-prog.html"><strong aria-hidden="true">1.2.</strong> Music Programming</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../intro/music-prog/midi.html"><strong aria-hidden="true">1.2.1.</strong> MIDI</a></li><li class="chapter-item "><a href="../../intro/music-prog/dsp.html"><strong aria-hidden="true">1.2.2.</strong> Audio Processing</a></li><li class="chapter-item "><a href="../../intro/music-prog/osc.html"><strong aria-hidden="true">1.2.3.</strong> Open Sound Control</a></li><li class="chapter-item "><a href="../../intro/music-prog/extempore.html"><strong aria-hidden="true">1.2.4.</strong> Extempore</a></li><li class="chapter-item "><a href="../../intro/music-prog/repl.html"><strong aria-hidden="true">1.2.5.</strong> The undertone REPL</a></li></ol></li><li class="chapter-item "><a href="../../intro/programming/index.html"><strong aria-hidden="true">1.3.</strong> Programming Basics</a></li><li class="chapter-item "><a href="../../intro/arch/index.html"><strong aria-hidden="true">1.4.</strong> The undertone Architecture</a></li></ol></li><li class="chapter-item expanded "><a href="../../quick-start/index.html"><strong aria-hidden="true">2.</strong> Quick Start</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../quick-start/extempore/index.html"><strong aria-hidden="true">2.1.</strong> Extempore</a></li><li class="chapter-item expanded "><a href="../../quick-start/osc/index.html" class="active"><strong aria-hidden="true">2.2.</strong> OSC</a></li></ol></li><li class="chapter-item "><a href="../../undertone/index.html"><strong aria-hidden="true">3.</strong> The undertone Guide</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../undertone/setup/index.html"><strong aria-hidden="true">3.1.</strong> Getting Set Up</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../undertone/setup/prog-envs.html"><strong aria-hidden="true">3.1.1.</strong> Programming Environments</a></li><li class="chapter-item "><a href="../../undertone/setup/project-creation.html"><strong aria-hidden="true">3.1.2.</strong> Creating an undertone Project</a></li></ol></li><li class="chapter-item "><a href="../../undertone/dsl.html"><strong aria-hidden="true">3.2.</strong> The DSL</a></li><li class="chapter-item "><a href="../../undertone/synth.html"><strong aria-hidden="true">3.3.</strong> The Default Synth</a></li><li class="chapter-item "><a href="../../undertone/dsp.html"><strong aria-hidden="true">3.4.</strong> Audio Processing</a></li><li class="chapter-item "><a href="../../undertone/audio-files.html"><strong aria-hidden="true">3.5.</strong> Audio Files</a></li><li class="chapter-item "><a href="../../undertone/instruments.html"><strong aria-hidden="true">3.6.</strong> Creating Instruments</a></li><li class="chapter-item "><a href="../../undertone/samplers.html"><strong aria-hidden="true">3.7.</strong> Samplers</a></li><li class="chapter-item "><a href="../../undertone/midi.html"><strong aria-hidden="true">3.8.</strong> Working with MIDI</a></li></ol></li><li class="chapter-item "><a href="../../music/index.html"><strong aria-hidden="true">4.</strong> Creating Music</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../music/theory/index.html"><strong aria-hidden="true">4.1.</strong> Music Theory</a></li></ol></li><li class="chapter-item "><a href="../../production/index.html"><strong aria-hidden="true">5.</strong> The Virtual Studio</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../production/midi/index.html"><strong aria-hidden="true">5.1.</strong> MIDI on the Mac</a></li><li class="chapter-item "><a href="../../production/daws/index.html"><strong aria-hidden="true">5.2.</strong> Controlling a DAW</a></li><li class="chapter-item "><a href="../../production/custom-osc/index.html"><strong aria-hidden="true">5.3.</strong> Creating a Custom OSC Server</a></li></ol></li><li class="chapter-item "><a href="../../epilogue/index.html"><strong aria-hidden="true">6.</strong> Epilogue</a></li><li class="spacer"></li><li class="chapter-item affix "><a href="../../back/versions.html">Versions</a></li><li class="chapter-item affix "><a href="../../back/feedback.html">Feedback</a></li><li class="chapter-item affix "><a href="../../redirects/mdbook.html">Built with mdBook</a></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+            
+            <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents"
+                        aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme"
+                        aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="lfe-pdp">LFE PDP</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="light">Light</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme"
+                                id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button>
+                        </li>
+                    </ul>
+                    
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
+                        aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S"
+                        aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    
+                </div>
+
+                <h1 class="menu-title">LFE Music Programming with undertone</h1>
+
+                <div class="right-buttons">
+                    <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    
+                    <a href="https://github.com/lfe/rebar3-quick-start" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" name="search" id="searchbar" name="searchbar"
+                        placeholder="Search this book ..." aria-controls="searchresults-outer"
+                        aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+            
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function (link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            </script>
+
+            <div id="content" class="content">
+                <main>
+                    <h1><a class="header" href="#osc" id="osc">OSC</a></h1>
+<h2><a class="header" href="#the-erlang-server" id="the-erlang-server">The Erlang Server</a></h2>
+<p>Tested against <code>erlsci/osc</code> <code>2.0</code> and <code>2.1</code>.</p>
+<pre><code class="language-lisp">lfe&gt; (set c (undertone.osc.client:connect &quot;localhost&quot; 2357))
+; ok#(client #Pid&lt;0.276.0&gt; #Pid&lt;0.277.0&gt;)
+lfe&gt; (undertone.osc.client:echo c)
+; ok
+</code></pre>
+<p>If you view the output of the running Erlang OSC server, you should see some
+debug output logged:</p>
+<pre><code>=INFO REPORT==== 27-Nov-2020::16:14:05.986773 ===
+Received message: []
+</code></pre>
+<p>You can also check passed arguements:</p>
+<pre><code class="language-lisp">lfe&gt; (undertone.osc.client:echo c '(a list of args))
+ok
+</code></pre>
+<pre><code>=INFO REPORT==== 27-Nov-2020::16:35:28.652299 ===
+Received message: [a,list,'of',args]
+</code></pre>
+<h2><a class="header" href="#supercollider-a-hreftable-of-contentsa" id="supercollider-a-hreftable-of-contentsa">SuperCollider <a href="#table-of-contents">↟</a></a></h2>
+<p>Tested against SuperCollider <code>3.11.2</code>.</p>
+<h3><a class="header" href="#connecting" id="connecting">Connecting</a></h3>
+<p>Start up the SuperCollider GUI / IDE, then in the editor enter the following:</p>
+<pre><code>s.options.maxLogins = 8;
+s.reboot;
+Server.default.options.asOptionsString
+</code></pre>
+<p>The last line will help you confirm the current settings, showing what they
+would be if you'd started <code>scsynth</code> manually. In particular, you want to confirm
+that you see <code>-l 8</code>.</p>
+<p>Then, in a terminal at the LFE REPL:</p>
+<pre><code class="language-lisp">lfe&gt; (set c (sc.client:connect &quot;localhost&quot; 57110))
+;#(client #Pid&lt;0.344.0&gt; #Pid&lt;0.345.0&gt;)
+</code></pre>
+<p>Once the client is set up, do a quick check to see that you are connected to the
+right server / version and that there are synthesizer definitions loaded:</p>
+<pre><code class="language-lisp">lfe&gt; (sc.client:version c)
+;(#(version &quot;3.11.2&quot;) #(branch &quot;HEAD&quot;) #(commit-id &quot;9a34118e&quot;))
+
+lfe&gt; (sc.client:status c)
+;(#(unit-generators 0)
+; #(synths 0)
+; #(gruops 9)
+; #(loaded-synth-definitions 106)
+; #(cpu-average-usage 0.030904095619916916)
+; #(cpu-peak-usage 0.2695612609386444)
+; #(nominal-sample-rate 4.41e4)
+; #(actual-sample-rate 44099.98856935304))
+</code></pre>
+<h3><a class="header" href="#playing-sounds" id="playing-sounds">Playing Sounds</a></h3>
+<p>First create a handful of instances of the default synth and then stop them,
+until we're ready:</p>
+<pre><code class="language-lisp">lfe&gt; (set synth-ids '(1000 1001 1002 1003 1004))
+;&quot;ϨϩϪϫϬ&quot;
+lfe&gt; (set (list s0 s1 s2 s3 s4) (list-comp
+       ((&lt;- id synth-ids))
+       (sc.client:create-synth c id)))
+;&quot;ϨϩϪϫϬ&quot;
+lfe&gt; (list-comp ((&lt;- id synth-ids)) (sc.client:stop-node c id))
+;(ok ok ok ok ok)
+</code></pre>
+<p>Instead of a boring C chord, let's take some notes from the C scale's Locrian
+mode using <code>B</code>, <code>E</code>, <code>F</code>, <code>A</code>, and <code>B</code> (a combination <em>rarely</em> heard!):</p>
+<pre><code class="language-lisp">lfe&gt; (include-lib &quot;include/notes.lfe&quot;)
+;|-- loaded include: notes --|
+lfe&gt; (sc.client:set-node c s0 `(&quot;freq&quot; ,(B3) out 0))
+;ok
+lfe&gt; (sc.client:set-node c s1 `(&quot;freq&quot; ,(E3) out 1))
+;ok
+lfe&gt; (sc.client:set-node c s2 `(&quot;freq&quot; ,(F3) out 0))
+;ok
+lfe&gt; (sc.client:set-node c s3 `(&quot;freq&quot; ,(A3) out 0))
+;ok
+lfe&gt; (sc.client:set-node c s4 `(&quot;freq&quot; ,(B4) out 1))
+;ok
+</code></pre>
+<p>Now play them all:</p>
+<pre><code class="language-lisp">lfe&gt; (list-comp ((&lt;- id synth-ids)) (sc.client:start-node c id))
+;(ok ok ok ok ok)
+</code></pre>
+<p>For the MIDI-minded, in addition to the <code>notes.lfe</code> include, there is a
+<code>midi-notes.lfe</code> file with functions defined for getting notes by MIDI number.</p>
+<p>And then, when you're done listening to that beautiful dissonance:</p>
+<pre><code class="language-lisp">lfe&gt; (list-comp ((&lt;- id synth-ids)) (sc.client:stop-node c id))
+;(ok ok ok ok ok)
+</code></pre>
+<h2><a class="header" href="#ardour-a-hreftable-of-contentsa" id="ardour-a-hreftable-of-contentsa">Ardour <a href="#table-of-contents">↟</a></a></h2>
+<p>Tested with versions 5 and 6 of Ardour.</p>
+<pre><code class="language-lisp">lfe&gt; (set c (ardour.client:connect &quot;localhost&quot; 3819))
+;#(client #Pid&lt;0.281.0&gt; #Pid&lt;0.282.0&gt;)
+lfe&gt; (ardour.client:strip-list c)
+;(#(name &quot;SynthMaster One&quot;)
+; #(strip-number 1)
+; #(type &quot;MIDI track&quot;)
+; #(inputs 0)
+; #(outputs 2)
+; #(muted? 0)
+; #(soloed? 0)
+; #(record-enabled? 0))
+</code></pre>
+
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    
+                    <a rel="prev" href="../../quick-start/extempore/index.html" class="mobile-nav-chapters previous"
+                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    
+
+                    
+                    <a rel="next" href="../../undertone/index.html" class="mobile-nav-chapters next"
+                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            
+            <a rel="prev" href="../../quick-start/extempore/index.html" class="nav-chapters previous" title="Previous chapter"
+                aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            
+
+            
+            <a rel="next" href="../../undertone/index.html" class="nav-chapters next" title="Next chapter"
+                aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            
+        </nav>
+
+    </div>
+
+    
+
+    
+    <!-- Google Analytics Tag -->
+    <script type="text/javascript">
+        var localAddrs = ["localhost", "127.0.0.1", ""];
+
+        // make sure we don't activate google analytics if the developer is
+        // inspecting the book locally...
+        if (localAddrs.indexOf(document.location.hostname) === -1) {
+            (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-38274766-4', 'auto');
+            ga('send', 'pageview');
+        }
+    </script>
+    
+
+    
+
+    
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+    
+
+    
+
+    
+    <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+    
+
+    <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Custom JS scripts -->
+    
+
+    
+
+</body>
+
+</html>
